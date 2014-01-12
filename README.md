@@ -1,4 +1,4 @@
-qns
-===
+Questionnaire Management System
+===============================
 
-questionnaire management system
+This is a Simple Management System with the main aim of helping the team to organize the question for questionnaire.
