@@ -13,7 +13,8 @@
 
 Route::get('/', function()
 {
-	return View::make('question.index');
+	$qn = Question::all();
+    return View::make('question.list',  compact('qn'));
 });
 
 Route::get('add/question', function()
