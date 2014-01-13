@@ -273,4 +273,9 @@ $(document).ready(function(){
           
         });
     })
+
+    //adding dependencies
+    $(".adddependece").click(function(){
+        //display a list of all questions with multiple values
+    });
 });

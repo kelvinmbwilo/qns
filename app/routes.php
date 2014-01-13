@@ -14,7 +14,7 @@
 Route::get('/', function()
 {
 	$qn = Question::all();
-    return View::make('question.list',  compact('qn'));
+    return View::make('question.fill',  compact('qn'));
 });
 
 Route::get('add/question', function()
@@ -24,7 +24,7 @@ Route::get('add/question', function()
 
 Route::get('question/list', array('as' => 'listqns', function () { 
     $qn = Question::all();
-    return View::make('question.list',  compact('qn'));
+    return View::make('question.fill',  compact('qn'));
 }));
 
 
@@ -76,7 +76,7 @@ Route::get('manage/category', array('as' => 'maagecategory', function () {
 
 Route::get('manage/question', array('as' => 'maageqn', function () { 
     $qn = Question::all();
-    return View::make('question.manage',  compact('qn'));
+    return View::make('question.manage',  compact('qn','qn1'));
 }));
 
 Route::get('category/manage', array('as' => 'managecategory', function () { 

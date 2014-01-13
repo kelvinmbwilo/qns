@@ -6,12 +6,11 @@
 
 @section('content')
 <div class='col-sm-10 col-sm-offset-1'>
-
+<?php $i=1 ?>
     @foreach ($qn as $value)
     <div class="row" id="{{ $value->id }}">
         <div class='col-sm-10'>
-            
-            <span class="editable" id="{{ $value->id }}">{{ $value->question }} </span>
+            {{ $i++ }} .<span class="editable" id="{{ $value->id }}">{{ $value->question }} </span>
             <span class="subqn" id="{{ $value->id }}"></span>
             @if(count($value->subquestion) != 0)
             <ul class='list-unstyled col-sm-offset-1'>
@@ -28,13 +27,16 @@
             @endif
         </div>
         <div class='col-sm-2'>
-            <button title="delete Subquestion" class='btn btn-xs btn-danger pull-right deleteqn'><i class='fa fa-trash-o'></i></button>
-            <button title="edit Subquestion" class='btn btn-xs btn-info pull-right editqn'><i class="fa fa-pencil"></i></button> 
-            <button title="add Subquestion" class='btn btn-xs btn-warning pull-right addsubqn'><i class="fa fa-plus"></i></button> 
+            <button title="delete Question" class='btn btn-xs btn-danger pull-right deleteqn' style="margin: 5px"><i class='fa fa-trash-o'></i></button>
+            <button title="edit SQuestion" class='btn btn-xs btn-info pull-right editqn' style="margin: 5px"><i class="fa fa-pencil"></i></button> 
+            <button title="add Answer" class='btn btn-xs btn-warning pull-right addsubqn' style="margin: 5px"><i class="fa fa-plus"></i></button> 
+            <!--<button title="add Dependance" class='btn btn-xs btn-primary pull-right adddependece' style="margin: 5px" data-toggle="modal" data-target="#myModal"><i class="fa fa-code-fork"></i></button>--> 
         </div>
+        
+        
     </div>
     <hr>
    @endforeach
-</table>
+
 </div>
 @stop
