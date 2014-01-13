@@ -45,9 +45,11 @@ $(document).ready(function(){
         
         //chek if there are multiple choice answers
         var anss = new Array();
+        var subtype = "";
         if(qtype === 'closed'){
             //prepare data for a subquestion table
-            
+            subtype = $("select#subtype").val();
+            alert(subtype)
             $("#subquestions").find("ul").find('li').each(function (index){
                 anss.push($(this).find('span').text()); 
             });
@@ -62,6 +64,7 @@ $(document).ready(function(){
                 question: question,
                 category: category,
                 qtype:    qtype,
+                subtype:  subtype,
                 anss:     anss
             }
           }).done(function( msg ) {
@@ -80,9 +83,16 @@ $(document).ready(function(){
         $(this).hide('slow');
         var editbtn = $(this);
         var original = editbtn.parent().parent().find('td.editable').text().replace(/^\s+|\s+$/g,'') ;
-        var textarea = "<textarea class='form-control col-sm-9'>"+original+"</textarea><a href='#a' class='changeval'><i class='fa fa-check fa-2x text-success'></i></a>"
+        var textarea = "<textarea class='form-control col-sm-9'>"+original+"</textarea>";
+        textarea += "<a href='#a' class='changeval'><i class='fa fa-check fa-2x text-success'></i> save </a>";
+        textarea += "<a href='#a' class='cancelchange'><i class='fa fa-times fa-2x text-danger'></i> Cancel</a>";
         editbtn.parent().parent().find('td.editable').html(textarea);
         
+        //cancelling a process
+        $(".cancelchange").click(function(){
+            $(this).parent().html(original);
+            editbtn.show("slow");
+        });
         //processing the tick
         $(".changeval").click(function(){
             var id = $(this).parent().attr("id");
@@ -130,8 +140,15 @@ $(document).ready(function(){
         var editbtn = $(this);
         var original = editbtn.parent().parent().find('.editable').text().replace(/^\s+|\s+$/g,'') ;
         var textarea = "<textarea class='form-control col-sm-9'>"+original+"</textarea>";
-        textarea+= "<a href='#a' class='changeval'><i class='fa fa-check fa-2x text-success'></i></a>"
+        textarea+= "<a href='#a' class='changeval'><i class='fa fa-check fa-2x text-success'></i> save </a>"
+        textarea += "<a href='#a' class='cancelchange'><i class='fa fa-times fa-2x text-danger'></i> Cancel</a>";
         editbtn.parent().parent().find('.editable').html(textarea);
+        
+        //cancelling a process
+        $(".cancelchange").click(function(){
+            $(this).parent().html(original);
+            editbtn.show("slow");
+        });
         
         //processing the tick
         $(".changeval").click(function(){
@@ -182,8 +199,15 @@ $(document).ready(function(){
         var editbtn = $(this);
         var original = editbtn.parent().find('.editable1').text().replace(/^\s+|\s+$/g,'') ;
         var textarea = "<textarea class='form-control col-sm-9'>"+original+"</textarea>";
-        textarea+= "<a href='#a' class='changeval'><i class='fa fa-check fa-2x text-success'></i></a>"
+        textarea+= "<a href='#a' class='changeval'><i class='fa fa-check fa-2x text-success'></i> save </a>"
+        textarea += "<a href='#a' class='cancelchange'><i class='fa fa-times fa-2x text-danger'></i> Cancel </a>";
         editbtn.parent().find('.editable1').html(textarea);
+        
+        //cancelling a process
+        $(".cancelchange").click(function(){
+            $(this).parent().html(original);
+            editbtn.show("slow");
+        });
         
         //processing the tick
         $(".changeval").click(function(){

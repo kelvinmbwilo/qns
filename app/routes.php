@@ -45,7 +45,8 @@ Route::get('question/add', function()
         
         //chek if it has sub answers
     if(isset($_GET['anss'])){
-        print_r($_GET['anss']);
+        $qn->answer = $_GET['subtype'];
+        $qn->save();
         foreach ($_GET['anss'] as $value) {
             $sub = Subquestion::create(
                     array(
