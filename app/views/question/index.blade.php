@@ -25,6 +25,7 @@
    <div class='col-sm-5'>
        <div class="row" id='subquestions'>
            <h4 class="text-center">Directed Answers</h4>
+           {{ Form::select('subtype',array('one'=>"Only Single Answer Allowed",'many'=>"Allow More Than One Answer"),'',array('class'=>'form-control','required'=>'requiered','id'=>'subtype')) }} 
            <ul>
                
            </ul>

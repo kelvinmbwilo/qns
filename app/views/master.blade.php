@@ -15,6 +15,7 @@ and open the template in the editor.
         {{ HTML::style("jqueryui/css/start/jquery-ui.css") }}
         
         {{ HTML::script("js/jquery-1.9.1.js") }}
+        
     </head>
     <body>
         @include('header')
