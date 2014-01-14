@@ -6,7 +6,7 @@
     }
 </style>
 
-<nav class="navbar navbar-default navbar-inverse" role="navigation">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
      <div class='row'><h4 class="text-center text-warning text-info" style="font-family: lato">STAKEHOLDERS QUESTIONNAIRE FOR ROAD SAFETY MANAGEMENT SYSTEM IN TANZANIA</h4>
   
@@ -61,7 +61,7 @@
       <div class="modal-body">
         <div class='form-group'>
                 {{ Form::label('email', 'Email Adress',array('class'=>'control-label col-sm-4')) }}
-                <div class='col-sm-8'>{{ Form::text('email','',array('class'=>'form-control','placeholder'=>'Multiple choice Answer', 'rows'=>'4')) }} </div>
+                <div class='col-sm-8'>{{ Form::text('email','',array('class'=>'form-control','placeholder'=>'Email Address', 'rows'=>'4')) }} </div>
             </div>
       </div>
       <div class="modal-footer">

@@ -17,7 +17,7 @@ and open the template in the editor.
         {{ HTML::script("js/jquery-1.9.1.js") }}
         
     </head>
-    <body>
+    <body style="padding-top: 100px">
         @include('header')
         <div class="container">
             <div class='row'>
