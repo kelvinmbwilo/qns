@@ -61,7 +61,7 @@
       <div class="modal-body">
         <div class='form-group'>
                 {{ Form::label('email', 'Email Adress',array('class'=>'control-label col-sm-4')) }}
-                <div class='col-sm-8'>{{ Form::text('email','',array('class'=>'form-control','placeholder'=>'Multiple choice Answer', 'rows'=>'4')) }} </div>
+                <div class='col-sm-8'>{{ Form::text('email','',array('class'=>'form-control','placeholder'=>'Email Address', 'rows'=>'4')) }} </div>
             </div>
       </div>
       <div class="modal-footer">
