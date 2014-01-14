@@ -13,5 +13,9 @@ class Question extends Eloquent {
         return $this->belongsTo('Category','id','category');
     }
     
+    public function sanswer(){
+        return $this->hasMany('Answer','question_id','id');
+    }
+    
 }
 

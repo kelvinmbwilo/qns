@@ -26,6 +26,7 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li class=""><a href="{{ route('listqns') }}"><i class='fa fa-bars fa-2x text-info'></i> Questions</a></li>
+      <li class=""><a href="#" title="share via email" data-toggle="modal" data-target="#myModal"><i class='fa fa-share-square-o fa-2x text-info'></i> Share</a></li>
       
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -41,19 +42,48 @@
         <ul class="dropdown-menu">
             <li>{{ link_to("manage/question","Question") }}</li>
             <li>{{ link_to("manage/category","Category") }}</li>
+            <li>{{ link_to("order/question","Questions Order") }}</li>
+            <li>{{ link_to("category/question","Categorize Questions") }}</li>
         </ul>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->
     </div>
 </nav>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class='form-group'>
+                {{ Form::label('email', 'Email Adress',array('class'=>'control-label col-sm-4')) }}
+                <div class='col-sm-8'>{{ Form::text('email','',array('class'=>'form-control','placeholder'=>'Multiple choice Answer', 'rows'=>'4')) }} </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="share">Share</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <script>
-$(document).ready(function(){
-    $("#topnavs li").hide().hover(function(){
-        $(this).addClass("btn btn-warning");
-    },function (){
-        $(this).removeClass("btn btn-warning");
+$(document).ready(function (){
+    $("#share").click(function(){
+        var email =  $('#email').val();
+        if(email === ""){
+            $('#email').focus();
+         }else{
+             $(".modal-body").html("<i class='fa fa-spinner fa-spin fa-4x'></i> Sending Mail....");
+             $.post("../question/send",{email:email},function(){
+                 $(".modal-body").html("<i class='fa fa-chek fa-spin fa-4x'></i> <h2> Email Was Sent Successfull To "+email+"</h2>");
+             })
+         }
     });
-});
+})
 </script>
 @show

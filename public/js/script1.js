@@ -49,7 +49,6 @@ $(document).ready(function(){
         if(qtype === 'closed'){
             //prepare data for a subquestion table
             subtype = $("select#subtype").val();
-            alert(subtype)
             $("#subquestions").find("ul").find('li').each(function (index){
                 anss.push($(this).find('span').text()); 
             });
@@ -70,9 +69,8 @@ $(document).ready(function(){
           }).done(function( msg ) {
               $('#maincontents').html("<h1>Question added sucessfull</h1> Please Wait redirecting......");
             setTimeout(function() {
-                
                 window.location.assign("../question/list")
-            }, 4000);
+            }, 1000);
           });
       }
     });

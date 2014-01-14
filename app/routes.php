@@ -22,9 +22,33 @@ Route::get('add/question', function()
 	return View::make('question.index');
 });
 
+Route::get('order/question', function()
+{   
+        $qn = Question::orderBy('ordering', 'asc')->get();
+	return View::make('question.order',  compact("qn"));
+});
+
+Route::get('category/question', function()
+{   
+        $cat = Category::lists('value','id');
+        $qn = Question::orderBy('ordering', 'asc')->get();
+	return View::make('question.categorize',  compact("qn","cat"));
+});
+
 Route::get('question/list', array('as' => 'listqns', function () { 
-    $qn = Question::all();
+    $qn = Question::orderBy('ordering', 'asc')->get();
+//    Mail::send('question.fill', compact('qn'), function($message) {
+//        $message->to('kelvinmbwilo@gmail.com', 'Kelvin Mbwilo')->subject('Welcome to or questionaire!');
+//     });
     return View::make('question.fill',  compact('qn'));
+}));
+
+Route::post('question/send', array('as' => 'sendqns', function () { 
+    $qn = Question::orderBy('ordering', 'asc')->get();
+    Mail::send('question.fill', compact('qn'), function($message) {
+        $message->to($_POST['email'], '')->subject('Welcome to or questionaire!');
+     });
+    return View::make('question.list',  compact('qn'));
 }));
 
 
@@ -118,3 +142,55 @@ Route::post('subquestion/delete', array('as' => 'deleteqn', function () {
     $qn = Subquestion::find($_POST['id']);
     $qn->delete();
 }));
+
+Route::post('question/answer', array( 'as'=>'ansqn' , function(){
+foreach ($_POST as $key => $value) {
+    $key = preg_replace("/[^0-9]/","",$key);
+    if(is_array($value)){
+        
+        $v= implode(",", $value);
+        Answer::create(
+                array('question_id'=>$key,
+                    'answer'=>$v)
+                );
+    }else{
+        Answer::create(
+                array('question_id'=>$key,
+                    'answer'=>$value)
+                );
+    }
+    $qn = Question::orderBy('ordering', 'asc')->get();
+    return View::make('question.fill',  compact('qn'));
+}
+}));
+
+Route::post('question/order', array( 'as'=>'orderqn' , function(){
+foreach ($_POST as $key => $value) {
+    $key = preg_replace("/[^0-9]/","",$key);
+    $qst = Question::find($key);
+    if($qst){
+        $qst->ordering = $value;
+        $qst->save();
+    }
+        
+}
+$qn = Question::orderBy('ordering', 'asc')->get();
+    return View::make('question.order',  compact('qn'));
+}));
+
+
+Route::post('question/categorize', array( 'as'=>'orderqn' , function(){
+foreach ($_POST as $key => $value) {
+    $key = preg_replace("/[^0-9]/","",$key);
+    $qst = Question::find($key);
+    if($qst){
+        $qst->category = $value;
+        $qst->save();
+    }
+        
+}
+    $cat = Category::lists('value','id');
+    $qn = Question::orderBy('ordering', 'asc')->get();
+    return View::make('question.categorize',  compact("qn","cat"));
+}));
+
