@@ -25,27 +25,62 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li class=""><a href="{{ route('listqns') }}"><i class='fa fa-bars fa-2x text-info'></i> Questions</a></li>
+        
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class='fa fa-bars fa-2x text-info'></i> Questions<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                @foreach(Category::all() as $cat)
+                <li>{{ link_to("sub/{$cat->id}",$cat->value) }}</li>
+                @endforeach
+                
+            </ul>
+          </li>
       <li class=""><a href="#" title="share via email" data-toggle="modal" data-target="#myModal"><i class='fa fa-share-square-o fa-2x text-info'></i> Share</a></li>
       
+        
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-plus-square-o fa-2x text-info"></i> Add<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li>{{ link_to("add/question","Add Question") }}</li>
-            <li>{{ link_to("add/category","Add Category") }}</li>
-        </ul>
-      </li>
+        
       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog fa-2x text-info"></i> Manage<b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog fa-2x text-info"></i> Category<b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li>{{ link_to("manage/question","Question") }}</li>
-            <li>{{ link_to("manage/category","Category") }}</li>
-            <li>{{ link_to("order/question","Questions Order") }}</li>
-            <li>{{ link_to("category/question","Categorize Questions") }}</li>
+            <li>{{ link_to("add/category","Add") }}</li>
+            <li>{{ link_to("manage/category","Manage") }}</li>
         </ul>
       </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class='fa fa-list-ol fa-2x text-info'></i> Manage Qns<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                 <li>{{ link_to("add/question","Add Question") }}</li>
+                @foreach(Category::all() as $cat)
+                <li>{{ link_to("manage/question/{$cat->id}",$cat->value) }}</li>
+                @endforeach
+                
+            </ul>
+          </li>
+      
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class='fa fa-list-ol fa-2x text-info'></i> Order<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                @foreach(Category::all() as $cat)
+                <li>{{ link_to("order/question/{$cat->id}",$cat->value) }}</li>
+                @endforeach
+                
+            </ul>
+          </li>
+          
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class='fa fa-arrows-alt fa-2x text-info'></i> Categorize<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                @foreach(Category::all() as $cat)
+                <li>{{ link_to("category/question/sub/{$cat->id}",$cat->value) }}</li>
+                @endforeach
+                
+            </ul>
+          </li>
+          
+          
     </ul>
   </div><!-- /.navbar-collapse -->
     </div>
@@ -81,9 +116,13 @@ $(document).ready(function (){
              $(".modal-body").html("<i class='fa fa-spinner fa-spin fa-4x'></i> Sending Mail....");
              $.post("../question/send",{email:email},function(){
                  $(".modal-body").html("<i class='fa fa-chek fa-spin fa-4x'></i> <h2> Email Was Sent Successfull To "+email+"</h2>");
-             })
+             });
          }
     });
-})
+    
+    $('#myModal').on('hidden.bs.modal', function () {
+                    $('#myModal').remove();
+                });
+});
 </script>
 @show

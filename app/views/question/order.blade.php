@@ -1,14 +1,14 @@
 @extends('master')
 
 @section('heading')
-  Change  Questions Order
+  Change  Questions Order ({{ $cat->value }})
 @stop
 
 @section('content')
-{{ Form::open(array("url"=>"/question/order","class"=>"form-horizontal")) }}
+{{ Form::open(array("url"=>"/question/order/{$cat->id}","class"=>"form-horizontal")) }}
 <div class='col-sm-10 col-sm-offset-1'>
 <?php $i=1 ?>
-    @foreach ($qn as $value)
+    @foreach ($cat->question()->orderBy('ordering', 'asc')->get() as $value)
     <div class="row" id="{{ $value->id }}">
         <div class='col-sm-10'>
             {{ $i }} .<span class="editable" id="{{ $value->id }}">{{ $value->question }} </span>

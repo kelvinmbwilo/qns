@@ -1,14 +1,14 @@
 @extends('master')
 
 @section('heading')
-  Categorize  Questions 
+  Categorize  Questions ({{ $catt->value }})
 @stop
 
 @section('content')
-{{ Form::open(array("url"=>"/question/categorize","class"=>"form-horizontal")) }}
+{{ Form::open(array("url"=>"/question/categorize/{$catt->id}","class"=>"form-horizontal")) }}
 <div class='col-sm-10 col-sm-offset-1'>
 <?php $i=1 ?>
-    @foreach ($qn as $value)
+    @foreach ($catt->question()->orderBy('ordering', 'asc')->get() as $value)
     <div class="row" id="{{ $value->id }}">
         <div class='col-sm-8'>
             {{ $i }} .<span class="editable" id="{{ $value->id }}">{{ $value->question }} </span>
