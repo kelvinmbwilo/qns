@@ -158,7 +158,7 @@ $(document).ready(function(){
            //sending data to be proccessed 
             $.ajax({
             type: "GET",
-            url:'../question/manage',
+            url:'../../question/manage',
             data: { 
                 id: id,
                 value :value
@@ -185,7 +185,7 @@ $(document).ready(function(){
         });
         $("#yes").click(function(){
             $(this).parent().html("<br><i class='fa fa-spinner fa-spin'></i>deleting...");
-            $.post("../question/delete",{id:id1},function(data){
+            $.post("../../question/delete",{id:id1},function(data){
               btn.hide("slow").next("hr").hide("slow");
            });
         });
@@ -217,7 +217,7 @@ $(document).ready(function(){
            //sending data to be proccessed 
             $.ajax({
             type: "GET",
-            url:'../subquestion/manage',
+            url:'../../subquestion/manage',
             data: { 
                 id: id,
                 value :value
@@ -242,7 +242,7 @@ $(document).ready(function(){
         });
         $("#yes").click(function(){
             $(this).parent().html("<br><i class='fa fa-spinner fa-spin'></i>deleting...");
-            $.post("../subquestion/delete",{id:id1},function(data){
+            $.post("../../subquestion/delete",{id:id1},function(data){
               btn.hide("slow").next("hr").hide("slow");
            });
         });
@@ -260,13 +260,13 @@ $(document).ready(function(){
            //sending data to be proccessed 
             $.ajax({
             type: "GET",
-            url:'../subquestion/add',
+            url:'../../subquestion/add',
             data: { 
                 question_id: id,
                 value :value
             }
           }).done(function( msg ) {
-             location.reload()
+             location.reload();
           });
           
         });

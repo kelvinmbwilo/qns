@@ -1,13 +1,13 @@
 @extends('master')
 
 @section('heading')
-  Manage Questions
+  Manage Questions ({{ $cat->value }})
 @stop
 
 @section('content')
 <div class='col-sm-10 col-sm-offset-1'>
 <?php $i=1 ?>
-    @foreach ($qn as $value)
+    @foreach ($cat->question()->orderBy('ordering', 'asc')->get() as $value)
     <div class="row" id="{{ $value->id }}">
         <div class='col-sm-10'>
             {{ $i++ }} .<span class="editable" id="{{ $value->id }}">{{ $value->question }} </span>
