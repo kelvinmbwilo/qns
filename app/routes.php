@@ -54,7 +54,7 @@ Route::get('question/list', array('as' => 'listqns', function () {
 
 Route::post('question/send', array('as' => 'sendqns', function () { 
     $qn = Question::orderBy('ordering', 'asc')->get();
-    Mail::send('question.fill', compact('qn'), function($message) {
+    Mail::send(url("/"), function($message) {
         $message->to($_POST['email'], '')->subject('Welcome to or questionaire!');
      });
     return View::make('question.list',  compact('qn'));
