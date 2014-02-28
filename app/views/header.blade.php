@@ -114,7 +114,7 @@ $(document).ready(function (){
             $('#email').focus();
          }else{
              $(".modal-body").html("<i class='fa fa-spinner fa-spin fa-4x'></i> Sending Mail....");
-             $.post("../question/send",{email:email},function(){
+             $.post("<?php url("question/send") ?>",{email:email},function(){
                  $(".modal-body").html("<i class='fa fa-chek fa-spin fa-4x'></i> <h2> Email Was Sent Successfull To "+email+"</h2>");
              });
          }
