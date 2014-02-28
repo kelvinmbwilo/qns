@@ -35,7 +35,7 @@
                 
             </ul>
           </li>
-      <li class=""><a href="#" title="share via email" data-toggle="modal" data-target="#myModal"><i class='fa fa-share-square-o fa-2x text-info'></i> Share</a></li>
+     <!--  <li class=""><a href="#" title="share via email" data-toggle="modal" data-target="#myModal"><i class='fa fa-share-square-o fa-2x text-info'></i> Share</a></li> -->
       
         
     </ul>
