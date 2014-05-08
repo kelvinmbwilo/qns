@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARDS</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background-image: url(body-bg.png)">
+      <div class="row">
+          <div class="col-md-5"><h2 class="text-success">ARDS <span style="font-size:16px;">Web Portal</span></h2></div>    
+          <div class="col-md-7"><h2 class="text-success">United Republic Of Tanzania</h2></div>    
+      </div>
+    <nav class="navbar navbar-static-top navbar-inverse" role="navigation" style="margin-top: 0">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">ARDS</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active" style="border-right: solid 1px #888"><a href="#">DASHBOARD</a></li>
+        <li class="" style="border-right: solid 1px #888"><a href="#">REPORT</a></li>
+        <li class="" style="border-right: solid 1px #888"><a href="#">PIVOT TABLE</a></li>
+        <li style="border-right: solid 1px #888"><a href="#">GIS</a></li>
+        <li style="border-right: solid 1px #888"><a href="#">DATA VISUALIZER</a></li>
+        <li style="border-right: solid 1px #888"><a href="#">NEWS</a></li>
+        <li style="border-right: solid 1px #888"><a href="#">HELP</a></li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>&nbsp;Leonard Mpande.<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-pencil"></i>&nbsp;Update Info</a></li>
+            <li><a href="#"><i class="fa fa-lock"></i>&nbsp;Change Password</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      <div class="container">
+          <div class="row" id="body">
+              <div class="col-md-3 ">
+                  <div id="leftMenu">
+                      <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Collapsible Group Item #1
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                   Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    Collapsible Group Item #2
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    Collapsible Group Item #3
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div id="contents" class="row">
+                      <h4>Dashboard content area</h4>
+                      <p>
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </p>
+                      
+                      <div class="col-md-12">
+                          <ul class="nav nav-tabs">
+                            <li class="active"><a href="#home" data-toggle="tab">Chat1</a></li>
+                            <li><a href="#profile" data-toggle="tab">Chat2</a></li>
+                            <li><a href="#messages" data-toggle="tab">Chat3</a></li>
+                            <li><a href="#settings" data-toggle="tab">Chat4</a></li>
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="home">
+                                <img src="images1.jpg" style="height: 300px; width: 100%" class="img-responsive img-thumbnail"/>
+                            </div>
+                            <div class="tab-pane" id="profile">
+                                <img src="download1.jpg" style="height: 300px; width: 100%" class="img-responsive img-thumbnail"/>
+                            </div>
+                              <div class="tab-pane" id="messages">
+                                  <img src="images5.jpg" style="height: 300px; width: 100%" class="img-responsive img-thumbnail" />
+                              </div>
+                              <div class="tab-pane" id="settings">
+                                  <img src="images7.jpg" style="height: 300px; width: 100%" class="img-responsive img-thumbnail"/>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3" style="margin-top: 60px">
+                  <div id="status">
+                      <br>
+                      <div class="row">
+                          <div class="col-md-5 col-md-offset-2"><img src="chart1.jpg" alt="..." class="img-thumbnail"></div>
+                          <div class="col-md-5" style="font-size:12px;">Anim pariatur cliche reprehender reprehender reprehender</div>
+                      </div>    
+                      <br>
+                      <div class="row">
+                          <div class="col-md-5 col-md-offset-2"><img src="chart2.jpg" alt="..." class="img-thumbnail"></div>
+                          <div class="col-md-5" style="font-size:12px;">Anim pariatur cliche reprehender reprehender reprehender</div>
+                      </div>    
+                      <br>
+                      <div class="row">
+                          <div class="col-md-5  col-md-offset-2"><img src="chart3.jpg" alt="..." class="img-thumbnail"></div>
+                          <div class="col-md-5" style="font-size:12px;">Anim pariatur cliche reprehender reprehender reprehender</div>
+                      </div>    
+                      <br>
+                  </div>
+              </div>
+          </div>
+          <div class="row" id="footer"></div>
+      </div>
+  </body>
+</html>
