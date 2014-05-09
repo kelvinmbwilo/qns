@@ -7,6 +7,8 @@ and open the template in the editor.
     Created on : May 8, 2014, 2:57:47 AM
     Author     : leonard
 */
+body { padding-bottom: 70px; }
+
 #leftMenu{
 text-indent: 12px;
     -moz-box-shadow:    0.5px 0.5px 0.5px 0.5px #ccc;
@@ -20,4 +22,5 @@ text-indent: 12px;
   -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px #ccc;
   box-shadow:         0.5px 0.5px 0.5px 0.5px #ccc;
     border-radius: 10px;
+    
 }
