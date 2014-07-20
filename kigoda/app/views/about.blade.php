@@ -10,23 +10,31 @@
    <h3> OBJECTIVES:</h3>
            <ul>
                 <li>
-                    To develop and promote ideas in interdisciplinary basic research on broad development issues from a pan-African perspective, that is, using pan-africanism both as a category of intellectual thought and a vision.
+                    To promote Mwalimu Julius Nyerere’s thought and ideals relating to human development.
                 </li>
                 <li>
-                   To reinvigorate the University as a site of rigorous intellectual debate and discussion through varied activities including soft and hard publications
+                    To develop and promote ideas in interdisciplinary basic research on broad development issues from a pan-African perspective, using pan-Africanism both as a category of intellectual thought and a vision.
                 </li>
                 <li>
-                   To create spaces, opportunities and for a for and debated on development directions
+                    To reinvigorate the concept of a university as a site of rigorous intellectual debate, discussion and publications.
                 </li>
+            <li>
+                To create spaces, opportunities for debate on Africa’s development directions.                </li>
+            <li>
+                To actively encourage and mentor young researchers in basic research.                </li>
             </ul>
 <h3>CORE ACTIVITIES ORGANISED BY THE CHAIR INCLUDE:</h3>
         <ul>
-            <li>Nyerere annual lectures</li>
-            <li>Bi annual Vice Chancellor’s Palaver on Development directions</li>
-            <li>Thinking with Mwalimu Series</li>
-            <li>Alumni Reflections</li>
-            <li>Preparation and publication of state of art papers on major topic relevant to the country and the continent.</li>
-            <li>Publication of the biannual bulletin, Chemchemi: fountain of ideas</li>
+            <li>Research on development issues with a Pan - African perspective.</li>
+            <li>Annual Mwalimu Julius Nyerere Intellectual Festival</li>
+            <li>Annual Mwalimu Julius Nyerere Intellectual Lectures</li>
+            <li>Vice Chancellor’s palavers</li>
+            <li>Occasional lectures and seminars</li>
+            <li>Undergraduate course on Pan African Thought and Practice</li>
+            <li>Mentoring of young researchers and scholars through research, post graduate studies and short term training</li>
+            <li>Publications – Nyerere lecture series, Chemchemi newsletter, articles, thinking with Mwalimu series.</li>
+            <li>Book launches</li>
+            <li>Film shows</li>
         </ul>
            </div>
 </div>

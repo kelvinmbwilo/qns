@@ -130,7 +130,11 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 
 .divPanel.notop {padding-top:0px}
 
-.divPanel.nobottom {padding-bottom:0px}
+.divPanel.nobottom {
+    padding-bottom:0px;
+    /*background: rgba(231, 199, 81,0.83);*/
+    /*border-radius: 30px;*/
+}
 
 
 /***** BOOTSTRAP CSS BASE OVERRIDE *****/
@@ -149,13 +153,33 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 
 
 
-body{background-image: url(subtle_stripes.png); background-color: rgb(181, 181, 181); background-repeat: repeat repeat;}
+body{
+    /*background-image: url(subtle_stripes.png);*/
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(rgba(79, 198, 130, 0.90),rgba(79, 198, 130, 0.90));
+    background-image: -o-linear-gradient(rgba(79, 198, 130, 0.90), rgba(79, 198, 130, 0.90)));
+    background-image: linear-gradient(rgba(79, 198, 130, 0.90), rgba(79, 198, 130, 0.90));
+    /*background-repeat: repeat repeat;*/
+}
 
-#divBoxed{margin-top: 21px; }
+#divBoxed{
+    margin-top: 21px;
+    background: rgba(230, 227, 51,0.83);
+    border-radius: 30px;
+}
 
 #divLogo{margin-top: 23px; margin-bottom: 0px; }
 
-#divSiteTitle{font-family: Chewy; font-size: 28px; line-height: 40px;color: #000000; /**color: rgb(212, 50, 32)*/; text-shadow: none; letter-spacing: 4px; font-weight: bold; font-style: normal; text-transform: uppercase;}
+#divSiteTitle{
+    font-family: Chewy;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000000; /**color: rgb(212, 50, 32)*/;
+    text-shadow: none; letter-spacing: 4px;
+    font-weight: bold; font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 #divTagLine{color: rgb(150, 150, 150); line-height: 22px; text-transform: lowercase; letter-spacing: 4px; font-size: 13px; padding-left: 2px; padding-right: 2px; background-color: transparent; text-shadow: none; font-family: Abel; font-weight: normal; font-style: normal; text-decoration: initial;}
 
@@ -207,7 +231,15 @@ h1{font-weight: normal; font-style: normal; letter-spacing: 0px; line-height: 58
 
 .sidebox a{color: rgb(191, 13, 0); font-family: Maven Pro;}
 
-#divFooter{border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; background-color: rgb(191, 13, 0); color: rgb(227, 227, 227); font-family: Maven Pro; text-transform: none; font-size: 12px; letter-spacing: 0px; line-height: 22px; background-image: -webkit-linear-gradient(top, rgb(191, 13, 0), rgb(171, 11, 0));}
+#divFooter{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #252422;
+    color: rgb(227, 227, 227); font-family:
+    Maven Pro; text-transform: none;
+    font-size: 12px; letter-spacing: 0px;
+    line-height: 22px;
+    background-image: -webkit-linear-gradient(top, #252422, #252422);}
 
 .divPanel{padding: 40px; padding-right: 5px}
 
@@ -227,7 +259,9 @@ h2{font-weight: normal; font-style: normal; ;font-family: Terminal Dosis Light;}
 
 #divHeaderLine3{margin-top: 37px; line-height: 21px; }
 
-#divFooter{background-image:-moz-linear-gradient(bottom,#ab0b00,#bf0d00);filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#bf0d00, endColorstr=#ab0b00);background-image:-o-linear-gradient(bottom,#ab0b00,#bf0d00);background-image:-webkit-gradient(linear,left top, left bottom,from(#ab0b00),to(#bf0d00));background-image:-webkit-linear-gradient(bottom,#ab0b00,#bf0d00);background-image:linear-gradient(bottom,#ab0b00,#bf0d00);}
+#divFooter{
+    background-image:-moz-linear-gradient(bottom,#252422,#252422);
+    filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#252422, endColorstr=#252422);background-image:-o-linear-gradient(bottom,#252422,#252422);background-image:-webkit-gradient(linear,left top, left bottom,from(#252422),to(#252422));background-image:-webkit-linear-gradient(bottom,#252422,#252422);background-image:linear-gradient(bottom,#252422,#252422);}
 
 a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
@@ -267,11 +301,11 @@ h6,.page-content h6 a{font-weight: normal; font-style: normal; ;font-family: Ter
 
 .navbar .dropdown-menu li > a {color: rgb(0, 0, 0);}
 
-.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu .active > a, .navbar .dropdown-menu .active > a:hover {filter:none;color:rgb(255, 255, 255);background-color:rgb(212, 14, 0);background-image:none}
+.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu .active > a, .navbar .dropdown-menu .active > a:hover {filter:none;color:rgb(255, 255, 255);background-color:#60CC8E;background-image:none}
 
 .navbar .nav-pills > li > a {padding: 17px 30px; border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; color: rgb(0, 0, 0); margin-right: 2px; margin-left: 2px; border-bottom-style: none;}
 
-.navbar .nav-pills > li > a:hover, .navbar .nav li.dropdown.open.active > .dropdown-toggle {color: rgb(0, 0, 0); background-color: rgb(235, 235, 235); border-bottom-style: none;}
+.navbar .nav-pills > li > a:hover, .navbar .nav li.dropdown.open.active > .dropdown-toggle {color: rgb(0, 0, 0); background-color: #60CC8E; border-bottom-style: none;}
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle {background:none}
 

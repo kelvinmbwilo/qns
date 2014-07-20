@@ -9,12 +9,6 @@
         <div class="row-fluid" style="background-image: url(img/nyerere_1976_state_house.jpg);">
             <div class="span6" >
 
-                <div id="divHeaderText" class="page-content">
-                    <div id="divHeaderLine1" style="/**color:#bfbfbf*/">6th Mwalimu Nyerere Intellectual Festival </div><br />
-                    <div id="divHeaderLine2">Theme: LIBERATING THE MIND FOR AFRICA’S ADVANCEMENT <br>
-                        – 9th- 11th April 2014</div><br />
-                    <div id="divHeaderLine3"><a class="btn btn-large btn-info" href="{{ url("festival") }}">See More >></a></div>
-                </div>
 
             </div>
             <div class="span6">
@@ -89,10 +83,11 @@
 
                 <h1>Welcome</h1>
 
-                <p>Mwalimu Julius Nyerere Research Chair in Pan African Studies was established as a university chair
-                    in honour of the great nationalist and pan Africanist leader of Africa and the first President of
-                    Tanzania, Mwalimu Julius Kambarage Nyerere. It was inaugurated on April 19, 2008 by the Prime
-                    Minister Honourable Mizengo Pinda in the presence of Mama Maria Nyerere
+                <p>
+                    The Mwalimu Nyerere Professorial Chair in Pan African Studies of the University of Dar es Salaam was established in April 2008, in honour of the great nationalist, pan - Africanist leader and first President of the United Republic of Tanzania, Mwalimu Julius Kambarage Nyerere.
+                </p>
+                <p>
+                    The first five – years of the Chair have witnessed rigorous intellectual discourse which has brought together intellectuals from across Africa to reflect on pertinent development concerns for the African continent. This phase was steered by Professor Issa Shivji who was the first Chair holding the position from 2008 to 2013. Profesor Penina Mlama is the current Chair, appointed to the post in 2014.
                 </p>
 
                 <br />
@@ -108,7 +103,7 @@
                     </div>
                     <div class="span4">
                         <h2>News & events</h2>
-                        {{ HTML::image("img/image10.png","",array("class"=>"img-circle","style"=>"height:110;width:150;margin-bottom:15px;margin-top:5px")) }}
+                        {{ HTML::image("img/Lumumba.JPG","",array("class"=>"img-rounded","style"=>"height:150px;width:270px;margin-bottom:15px;margin-top:5px")) }}
                         <p>Distinguished Nyerere Lecture by Prof. Thandika Mkandawire during a week of reflection on development in the contex of pan-africanism<br /><a href="#">Read More &raquo;</a></p>
                     </div>
                     <div class="span4" id="footerArea4">
@@ -116,6 +111,7 @@
                         <h3>Get in Touch</h3>
 
                         <ul id="contact-info">
+
                             <li>
                                 <i class="general foundicon-phone icon"></i>
                                 <span class="field">Phone:</span>
@@ -129,13 +125,17 @@
                                 <a href="mailto:mwalimuchair@udsm.ac.tz" title="Email">mwalimuchair@udsm.ac.tz</a>
                             </li>
                             <li>
-                                <i class="general foundicon-home icon" style="margin-bottom:90px"></i>
+                                <i class="general foundicon-home icon" style="margin-bottom:210px"></i>
                                 <span class="field">Address:</span>
                                 <br />
-                                UNIVERSITY OF DAR ES SALAAM<br />
+                                Mwalimu Julius Nyerere Chair in Pan African Studies<br />
+                                University of Dar es Salaam<br />
+                                Mwalimu Julius Nyerere Campus<br />
+                                IRA Building<br />
+                                1st floor, Office no 317<br />
                                 P.O.BOX 35091<br />
-                                DAR ES SALAAM<br />
-                                TANZANIA
+                                Dar Es Salaam<br />
+                                Tanzania
                             </li>
                         </ul>
 
