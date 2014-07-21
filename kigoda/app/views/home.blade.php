@@ -19,37 +19,20 @@
                             Mwalimu Nyerere and Karume in Zanzibar.
                         </div>
                     </div>
-                    <div data-src="img/image2.png" >
-                        <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeIn camera_effected camera_caption cap1">
-                            Mwalimu Nyerere preserving environment
-                        </div>
-                    </div>
-                    <div data-src="img/east_africa_leaders_1964.jpg" >
-                        <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeIn camera_effected camera_caption cap1">
-                            East Africa Leaders in 1964
-                        </div>
-                    </div>
-                    <div data-src="img/image3.png" >
-                        <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeIn camera_effected camera_caption cap1">
-                            Mwalimu Nyerere Tanga safari
-                        </div>
-                    </div>
-                    <div data-src="img/image4.png" >
-                        <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeIn camera_effected camera_caption cap1">
-                            Mwalimu sayying goodbye after leaving the office 1985
-                        </div>
-                    </div>
-                    <div data-src="img/image5.png" >
+                    <div data-src="img/pic-1.jpg" >
 
                     </div>
-                    <div data-src="img/image6.png" >
+                    <div data-src="img/pic-2.jpg" >
+
+                    </div>
+                    <div data-src="img/Mlama.JPG" >
                         <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeIn camera_effected camera_caption cap1">
-                            Installation of Mr Bereket
+                            Installation of Prof. Pennina M Mlama
                         </div>
                     </div>
-                    <div data-src="img/image9.png" >
+                    <div data-src="img/Lumumba.JPG" >
                         <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeIn camera_effected camera_caption cap1">
-                            Installation of Mr Wolle Soyinka
+                            Installation of Prof. Patric Lumumba
                         </div>
                     </div>
                     <div data-src="img/image8.png" >
