@@ -14,18 +14,14 @@
             <div class="span6">
 
                 <div id="camera_wrap">
-                    <div data-src="img/image1.png" >
-                        <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeIn camera_effected camera_caption cap1">
-                            Mwalimu Nyerere and Karume in Zanzibar.
-                        </div>
+
+                    <div data-src="img/pic-2.jpg" >
+
                     </div>
                     <div data-src="img/pic-1.jpg" >
 
                     </div>
-                    <div data-src="img/pic-2.jpg" >
-
-                    </div>
-                    <div data-src="img/Mlama.JPG" >
+                    <div data-src="img/Mlama.png" >
                         <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeIn camera_effected camera_caption cap1">
                             Installation of Prof. Pennina M Mlama
                         </div>
@@ -79,7 +75,7 @@
                     <div class="span4">
                         <h2>Upcoming Events</h2>
                         {{ HTML::image("img/nyerere_1976_state_house.jpg","",array("class"=>"img-circle","style"=>"height:110;width:150;margin-bottom:15px;margin-top:5px")) }}
-                        <p>6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014 with theme of "Liberating The mind for Africa Advancement"
+                        <p>Our next event will be on 14th october, we are currently under preparation
                             <br />
                             <a href="{{ url("festival") }}">Read More &raquo;</a>
                         </p>
@@ -87,7 +83,9 @@
                     <div class="span4">
                         <h2>News & events</h2>
                         {{ HTML::image("img/Lumumba.JPG","",array("class"=>"img-rounded","style"=>"height:150px;width:270px;margin-bottom:15px;margin-top:5px")) }}
-                        <p>Distinguished Nyerere Lecture by Prof. Thandika Mkandawire during a week of reflection on development in the contex of pan-africanism<br /><a href="#">Read More &raquo;</a></p>
+                        <p>
+                            Distinguished Nyerere Lecture by Prof. Patric Lumumba  during 6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014 with theme of "Liberating The mind for Africa Advancement"
+                            <br /><a href="{{ asset('Lumumbaslecture.doc') }}">Read More &raquo;</a></p>
                     </div>
                     <div class="span4" id="footerArea4">
 

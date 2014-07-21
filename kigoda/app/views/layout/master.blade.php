@@ -57,7 +57,7 @@
                 {{ HTML::image("logo.png","",array("class"=>"pull-left","style"=>"padding-right:60px")) }}
                 {{ HTML::image("img/udsm.png","",array("class"=>"pull-right","style"=>"padding-left:40px")) }}
                 <a href='{{ url("/") }}' id="divSiteTitle">UNIVERSITY OF DAR ES SALAAM THE MWALIMU NYERERE PROFESSORIAL CHAIR IN PAN AFRICAN STUDIES</a><br />
-                <a href="{{ url("festival") }}" id="divTagLine">6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014</a>
+<!--                <a href="{{ url("festival") }}" id="divTagLine">6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014</a>-->
                 @include("layout.topmenu")
             </div>
 
@@ -74,11 +74,11 @@
     <div class="span3" style="padding-top:25px; margin: 5px ">
         <div class="row-fluid" style="font-family: Maven Pro;">
             <h4>Prof. Penina M. Mlama Appointment</h4>
-            <img src="{{ asset('img/Mlama.JPG') }}" style="width: 300px;height: 170px" class="img-rounded"/>
+            <img src="{{ asset('img/Mlama.png') }}" style="width: 300px;height: 210px" class="img-rounded"/>
             <p>
                 This is to inform the University of Dar es Salaam community and the public that, following the retirement of Prof. Issa Shivji, the position of Mwalimu Nyerere Professorial Chair in Pan-African Studies fell vacant.  The University Council at its 220th meeting held on 30th January 2014  appointed Prof. Penina M. Mlama to the position of Mwalimu Julius K. Nyerere Professorial Chair in Pan-African Studies.</p>
         </div>
-        <div class="row-fluid fb-like-box" data-href="https://www.facebook.com/kigodachamwalimunyerere" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false">
+        <div style="height: 250px" class="row-fluid fb-like-box" data-href="https://www.facebook.com/kigodachamwalimunyerere" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false">
 
         </div>
 

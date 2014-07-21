@@ -156,15 +156,15 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 body{
     /*background-image: url(subtle_stripes.png);*/
     background-color: transparent;
-    background-image: -webkit-linear-gradient(rgba(79, 198, 130, 0.90),rgba(79, 198, 130, 0.90));
-    background-image: -o-linear-gradient(rgba(79, 198, 130, 0.90), rgba(79, 198, 130, 0.90)));
-    background-image: linear-gradient(rgba(79, 198, 130, 0.90), rgba(79, 198, 130, 0.90));
+    background-image: -webkit-linear-gradient(rgba(142, 206, 23, 0.90),rgba(142, 206, 23, 0.90));
+    background-image: -o-linear-gradient(rgba(79, 198, 130, 0.90), rgba(142, 206, 23, 0.90)));
+    background-image: linear-gradient(rgba(142, 206, 23, 0.90), rgba(142, 206, 23, 0.90));
     /*background-repeat: repeat repeat;*/
 }
 
 #divBoxed{
     margin-top: 21px;
-    background: rgba(230, 227, 51,0.83);
+    background: rgba(255, 255, 251,0.83);
     border-radius: 30px;
 }
 
@@ -301,11 +301,11 @@ h6,.page-content h6 a{font-weight: normal; font-style: normal; ;font-family: Ter
 
 .navbar .dropdown-menu li > a {color: rgb(0, 0, 0);}
 
-.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu .active > a, .navbar .dropdown-menu .active > a:hover {filter:none;color:rgb(255, 255, 255);background-color:#60CC8E;background-image:none}
+.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu .active > a, .navbar .dropdown-menu .active > a:hover {filter:none;color:rgb(255, 255, 255);background-color:#8ECE17;background-image:none}
 
 .navbar .nav-pills > li > a {padding: 17px 30px; border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; color: rgb(0, 0, 0); margin-right: 2px; margin-left: 2px; border-bottom-style: none;}
 
-.navbar .nav-pills > li > a:hover, .navbar .nav li.dropdown.open.active > .dropdown-toggle {color: rgb(0, 0, 0); background-color: #60CC8E; border-bottom-style: none;}
+.navbar .nav-pills > li > a:hover, .navbar .nav li.dropdown.open.active > .dropdown-toggle {color: rgb(0, 0, 0); background-color: #8ECE17; border-bottom-style: none;}
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle {background:none}
 

@@ -50,13 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="50" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.29149798" vertical-offset="432" max-vertical-offset="2556">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="77" column="101" selection-start="3073" selection-end="3073" vertical-scroll-proportion="-3.3333333" vertical-offset="1296" max-vertical-offset="2520">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,11 +68,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="master.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="105" selection-start="3254" selection-end="3254" vertical-scroll-proportion="0.0" vertical-offset="1314" max-vertical-offset="2052">
-              <folding />
+            <state line="76" column="82" selection-start="3238" selection-end="3238" vertical-scroll-proportion="0.60162604" vertical-offset="1072" max-vertical-offset="2052">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,7 +82,7 @@
       <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/styles/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="307" column="138" selection-start="14109" selection-end="14109" vertical-scroll-proportion="0.0" vertical-offset="5292" max-vertical-offset="7110">
+            <state line="307" column="138" selection-start="14110" selection-end="14110" vertical-scroll-proportion="0.0" vertical-offset="3348" max-vertical-offset="7110">
               <folding />
             </state>
           </provider>
@@ -126,10 +126,10 @@
         <option value="$PROJECT_DIR$/app/views/activities.blade.php" />
         <option value="$PROJECT_DIR$/app/views/films.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layout/topmenu.blade.php" />
-        <option value="$PROJECT_DIR$/public/styles/custom.css" />
         <option value="$PROJECT_DIR$/app/views/about.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/layout/master.blade.php" />
+        <option value="$PROJECT_DIR$/public/styles/custom.css" />
         <option value="$PROJECT_DIR$/app/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/layout/master.blade.php" />
       </list>
     </option>
   </component>
@@ -369,9 +369,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="119" selection-start="5060" selection-end="5060" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2862">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -385,7 +383,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="105" selection-start="3254" selection-end="3254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -451,7 +451,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="46" selection-start="2556" selection-end="2577" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1890">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -470,9 +472,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="93" selection-start="6371" selection-end="6371" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="2844">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -503,16 +503,16 @@
     <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="0" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="3222">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="45" selection-start="3695" selection-end="3736" vertical-scroll-proportion="0.0" vertical-offset="1458" max-vertical-offset="2358">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -609,23 +609,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="307" column="138" selection-start="14109" selection-end="14109" vertical-scroll-proportion="0.0" vertical-offset="5292" max-vertical-offset="7110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="105" selection-start="3254" selection-end="3254" vertical-scroll-proportion="0.0" vertical-offset="1314" max-vertical-offset="2052">
+        <state line="307" column="138" selection-start="14110" selection-end="14110" vertical-scroll-proportion="0.0" vertical-offset="3348" max-vertical-offset="7110">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="50" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.29149798" vertical-offset="432" max-vertical-offset="2556">
+        <state line="77" column="101" selection-start="3073" selection-end="3073" vertical-scroll-proportion="-3.3333333" vertical-offset="1296" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="82" selection-start="3238" selection-end="3238" vertical-scroll-proportion="0.60162604" vertical-offset="1072" max-vertical-offset="2052">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
