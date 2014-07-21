@@ -84,7 +84,7 @@
                         <h2>News & events</h2>
                         {{ HTML::image("img/Lumumba.JPG","",array("class"=>"img-rounded","style"=>"height:150px;width:270px;margin-bottom:15px;margin-top:5px")) }}
                         <p>
-                            Distinguished Nyerere Lecture by Prof. Patric Lumumba  during 6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014 with theme of "Liberating The mind for Africa Advancement"
+                            Installation of the distinguished Nyerere Lecturer Prof. Patric Lumumba  during the 6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014 with theme of "Liberating The mind for Africa Advancement"
                             <br /><a href="{{ asset('Lumumbaslecture.doc') }}">Read More &raquo;</a></p>
                     </div>
                     <div class="span4" id="footerArea4">
