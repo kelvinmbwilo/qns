@@ -1,4 +1,4 @@
-<div id="divFooter" class="footerArea">
+<div id="divFooter" class="footerArea container">
 
     <div class="divPanel">
 

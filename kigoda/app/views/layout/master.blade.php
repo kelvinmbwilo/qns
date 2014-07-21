@@ -79,10 +79,9 @@
                 This is  to inform the University of Dar es Salaam community and the public that, following the retirement of Prof. Issa Shivji, the position of Mwalimu Nyerere Professorial Chair in Pan-African Studies fell vacant.  The University Council at its 220th meeting held on 30th January 2014  appointed Prof. Penina M. Mlama to the position of Mwalimu Julius K. Nyerere Professorial Chair in Pan-African Studies.</p>
         </div>
 <!--        <div class="row-fluid fb-like-box" data-href="https://www.facebook.com/kigodachamwalimunyerere" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false">-->
-
+        <img src="{{ asset('img/nkurumah.jpg') }}" />
         </div>
 
-        <a href="{{asset('Brochure.pdf') }}" class="btn btn-success"><i class="icon-download"></i> Get Our Bronchure </a>
     </div>
 </div>
 
