@@ -74,8 +74,8 @@
                 <div class="row-fluid">
                     <div class="span4">
                         <h2>Upcoming Events</h2>
-                        {{ HTML::image("img/nyerere_1976_state_house.jpg","",array("class"=>"img-circle","style"=>"height:110;width:150;margin-bottom:15px;margin-top:5px")) }}
-                        <p>Our next event will be on 14th october, we are currently under preparation
+                        {{ HTML::image("img/nyerere_1976_state_house.jpg","",array("class"=>"img-circle","style"=>"height:150;width:270;margin-bottom:15px;margin-top:5px")) }}
+                        <p>Our next event will be on 14th october, please put your diaries open.
                             <br />
                             <a href="{{ url("festival") }}">Read More &raquo;</a>
                         </p>

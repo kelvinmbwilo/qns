@@ -171,9 +171,9 @@ body{
 #divLogo{margin-top: 23px; margin-bottom: 0px; }
 
 #divSiteTitle{
-    font-family: Chewy;
-    font-size: 28px;
-    line-height: 40px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 23px;
+    line-height: 30px;
     color: #000000; /**color: rgb(212, 50, 32)*/;
     text-shadow: none; letter-spacing: 4px;
     font-weight: bold; font-style: normal;
@@ -181,7 +181,7 @@ body{
     text-align: center;
 }
 
-#divTagLine{color: rgb(150, 150, 150); line-height: 22px; text-transform: lowercase; letter-spacing: 4px; font-size: 13px; padding-left: 2px; padding-right: 2px; background-color: transparent; text-shadow: none; font-family: Abel; font-weight: normal; font-style: normal; text-decoration: initial;}
+#divTagLine{color: rgb(150, 150, 150); line-height: 22px; text-transform: lowercase; letter-spacing: 4px; font-size: 13px; padding-left: 2px; padding-right: 2px; background-color: transparent; text-shadow: none; font-family: Abel; font-weight: normal; font-style: normal;}
 
 .navContainer {}
 
@@ -356,7 +356,7 @@ h6,.page-content h6 a{font-weight: normal; font-style: normal; ;font-family: Ter
     .navbar {margin-top: 0px;padding-top:0px}
 
     
-    #decorative1, #decorative2 {margin-left:-20px;margin-right:-20px;padding-left:}
+    #decorative1, #decorative2 {margin-left:-20px;margin-right:-20px;}
 
     
     #divFooter {margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px;}
