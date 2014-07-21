@@ -23,18 +23,25 @@
         The theme will be addressed under four major sub-themes:
         </p>
         <ol>
-
             <li> Pan-Africanism and the liberation of the African Mind.</li>
             <li> The mind-set and cultural liberation</li>
             <li>The mind-set and economic empowerment</li>
             <li>The mind- set and social advancement.</li>
-
         </ol>
         <p>
             Lectures, panel discussions, dialogue sessions, exhibitions and performances will be organized around these
             subthemes.
-
         </p>
+        <div class="row-fluid">
+            <div class="span4"><img src="{{ asset('img/Nyerereday.JPG') }}" style="height: 200px"/></div>
+            <div class="span4"><img src="{{ asset('img/Lumumba.JPG') }}" style="height: 200px"/></div>
+            <div class="span4"><img src="{{ asset('img/Mlama.png') }}" style="height: 200px"/></div>
+        </div>
+<h3>Download Speech</h3>
+        <ol>
+            <li><a href="{{ asset('PROFSHIVJI.pdf') }}">Prof Shivji's Lecture</a> </li>
+            <li> <a href="{{ asset('Lumumbaslecture.doc') }}">Prof Patric Lumumba's Lecture</a></li>
+        </ol>
     </div>
     </div>
 @stop

@@ -5,7 +5,7 @@
         <div class="row-fluid">
             <div class="span12">
                 <p class="copyright">
-                    Copyright ©{{ date("Y") }} MWALIMU JULIUS NYERERE RESEARCH CHAIR IN PAN-AFRICAN STUDIES                </p>
+                    Copyright ©{{ date("Y") }} UNIVERSITY OF DAR ES SALAAM THE MWALIMU NYERERE PROFESSORIAL CHAIR IN PAN AFRICAN STUDIES                </p>
 
                 <p class="social_bookmarks">
                     <a href="https://www.facebook.com/kigodachamwalimunyerere"><i class="social foundicon-facebook"></i> Facebook</a>
