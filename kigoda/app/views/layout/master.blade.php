@@ -56,7 +56,9 @@
             <div id="divLogo" style="text-align: center">
                 {{ HTML::image("logo.png","",array("class"=>"pull-left","style"=>"padding-right:60px")) }}
                 {{ HTML::image("img/udsm.png","",array("class"=>"pull-right","style"=>"padding-left:40px")) }}
-                <a href='{{ url("/") }}' id="divSiteTitle">UNIVERSITY OF DAR ES SALAAM THE MWALIMU NYERERE PROFESSORIAL CHAIR IN PAN AFRICAN STUDIES</a><br />
+                <a href='{{ url("/") }}' id="divSiteTitle">
+                   <small>UNIVERSITY OF DAR ES SALAAM </small><br>
+                    THE MWALIMU NYERERE PROFESSORIAL CHAIR IN PAN AFRICAN STUDIES</a><br />
 <!--                <a href="{{ url("festival") }}" id="divTagLine">6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014</a>-->
                 @include("layout.topmenu")
             </div>

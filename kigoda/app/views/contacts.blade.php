@@ -14,11 +14,14 @@
                     <h3>Get in Touch</h3>
 
                     <ul id="contact-info">
+
                         <li>
-                            <i class="general foundicon-phone icon"></i>
+                            <i class="general foundicon-phone icon" style="margin-bottom:50px"></i>
                             <span class="field">Phone:</span>
                             <br />
-                            (2326) +255-22-2410763
+                            +255 22-2410763<br />
+                            +255 754 561 703<br />
+                            +255 754 281 837
                         </li>
                         <li>
                             <i class="general foundicon-mail icon"></i>
@@ -27,13 +30,17 @@
                             <a href="mailto:mwalimuchair@udsm.ac.tz" title="Email">mwalimuchair@udsm.ac.tz</a>
                         </li>
                         <li>
-                            <i class="general foundicon-home icon" style="margin-bottom:90px"></i>
+                            <i class="general foundicon-home icon" style="margin-bottom:210px"></i>
                             <span class="field">Address:</span>
                             <br />
-                            UNIVERSITY OF DAR ES SALAAM<br />
+                            Mwalimu Julius Nyerere Chair in Pan African Studies<br />
+                            University of Dar es Salaam<br />
+                            <!--                                Mwalimu Julius Nyerere Campus<br />-->
+                            IRA Building<br />
+                            1st floor, Office no 317<br />
                             P.O.BOX 35091<br />
-                            DAR ES SALAAM<br />
-                            TANZANIA
+                            Dar Es Salaam, Tanzania<br />
+
                         </li>
                     </ul>
 

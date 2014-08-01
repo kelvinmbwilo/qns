@@ -75,7 +75,7 @@
                     <div class="span4">
                         <h2>Upcoming Events</h2>
                         {{ HTML::image("img/nyerere_1976_state_house.jpg","",array("class"=>"img-rounded","style"=>"height:150;width:270;margin-bottom:15px;margin-top:5px")) }}
-                        <p>Our next event will be on 14th october, please put your diaries open.
+                        <p>Our next event will be on 14th october, please keep your diaries open.
                             <br />
                             <a href="{{ url("festival") }}">Read More &raquo;</a>
                             <br />
@@ -88,8 +88,8 @@
                         <h2>News & events</h2>
                         {{ HTML::image("img/Lumumba.JPG","",array("class"=>"img-rounded","style"=>"height:150px;width:270px;margin-bottom:15px;margin-top:5px")) }}
                         <p>
-                            Installation of the distinguished Nyerere Lecturer Prof. Patric Lumumba  during the 6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014 with theme of "Liberating The mind for Africa Advancement"
-                            <br /><a href="{{ asset('Lumumbaslecture.doc') }}">Read More &raquo;</a></p>
+                            Installation of the distinguished Nyerere Lecturer Prof. Patric Lumumba  during the 6th Mwalimu Nyerere Intellectual Festival – 9th- 11th April 2014.
+                            <br /><a href="{{ url('festival') }}">Read More &raquo;</a></p>
                     </div>
                     <div class="span4" id="footerArea4">
 
@@ -98,10 +98,12 @@
                         <ul id="contact-info">
 
                             <li>
-                                <i class="general foundicon-phone icon"></i>
+                                <i class="general foundicon-phone icon" style="margin-bottom:50px"></i>
                                 <span class="field">Phone:</span>
                                 <br />
-                                (2326) +255-22-2410763
+                                +255 22-2410763<br />
+                                +255 754 561 703<br />
+                                +255 754 281 837
                             </li>
                             <li>
                                 <i class="general foundicon-mail icon"></i>
@@ -115,12 +117,12 @@
                                 <br />
                                 Mwalimu Julius Nyerere Chair in Pan African Studies<br />
                                 University of Dar es Salaam<br />
-                                Mwalimu Julius Nyerere Campus<br />
+<!--                                Mwalimu Julius Nyerere Campus<br />-->
                                 IRA Building<br />
                                 1st floor, Office no 317<br />
                                 P.O.BOX 35091<br />
-                                Dar Es Salaam<br />
-                                Tanzania
+                                Dar Es Salaam, Tanzania<br />
+
                             </li>
                         </ul>
 
