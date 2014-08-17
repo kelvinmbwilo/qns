@@ -1,338 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ARDS</title>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="Slider/js/sliderman.1.3.8.js"></script>
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="Slider/css/sliderman.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-      <link href="http://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-      <style>
-          .leftmenu{
-              font-size: 0.9em;
-          }
-      </style>
-  </head>
-  <body style="background-image: url(body-bg.png); font-family: Maven Pro;">
-      <div class="row" style="background-color:#457B49;  padding: 5px">
-          <div class="col-md-5" style="font-weight: bolder;">
-              <div style="font-weight: bolder; color:#fff;">
-                  <img src="nembo.gif" class="img-rounded" style="height: 50px">
-                  <span style="font-size:30px;margin-left:10px;font-weight: bolder;">ARDS</span> <span style="font-size:16px;">Web Portal</span>
-              </div>
-          </div>
-          <div class="col-md-7" >
-              <span style="font-size:30px;margin-left:10px;color:#fff;">United Republic Of Tanzania
-                  <img src="tz_flag.jpg" class="img-rounded pull-right" style="height: 50px">
-              </span>
+<html>
+	<head>
+		<title>LGDM2 Data Analysis</title>
 
-          </div>
-      </div>
-    <nav class="navbar navbar-static-top navbar-inverse" role="navigation" style="margin-top: 0">
-  <div class="container" style="font-size: 0.9em">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">ARDS</a>
+        <link rel="stylesheet" type="text/css" href="jquery-ui-multiselect/demos/assets/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/prettify.css" />
+        <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="assets/prettify.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="jquery-ui-multiselect/jquery.multiselect.css" />
+		<link rel="stylesheet" type="text/css" href="jquery-ui-multiselect/jquery.multiselect.filter.css" />
+		<link rel="stylesheet" type="text/css" href="jquery-ui-multiselect/demos/assets/prettify.css" />
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="Highcharts/js/highcharts.js"></script>
+		<script type="text/javascript" src="Highcharts/js/modules/exporting.js"></script>
+		<script type="text/javascript" src="Highcharts/js/themes/sand-signika.js"></script>
+		<script type="text/javascript" src="jquery-ui-multiselect/src/jquery.multiselect.min.js"></script>
+		<script type="text/javascript" src="jquery-ui-multiselect/src/jquery.multiselect.filter.js"></script>
+		<script type="text/javascript" src="jquery-ui-multiselect/demos/assets/prettify.js"></script>
+		<script type="text/javascript" src="orgUnits.js"></script>
+		<script type="text/javascript" src="periods.js"></script>
+		<script type="text/javascript" src="data_element.js"></script>
+		<script type="text/javascript" src="bar.js"></script>
+		<script type="text/javascript" src="line.js"></script>
+		<script type="text/javascript" src="column.js"></script>
+		<script type="text/javascript" src="table.js"></script>
+		<script type="text/javascript" src="pie.js"></script>
+		<script type="text/javascript" src="data_analysis1.js"></script>
+	</head>
+
+<body>
+<div class="row">
+    <div class="col-sm-3">
+
     </div>
+    <div class="col-sm-9">
+        <div class="alert alert-danger fade in" role="alert" style="padding: 4px">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            <strong>Empty Value!</strong> Please select at least one Administrative unit, period and data.
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active" style="border-right: solid 1px #888"><a href="#">DASHBOARD</a></li>
-        <li class="" style="border-right: solid 1px #888"><a href="#">REPORT</a></li>
-        <li class="" style="border-right: solid 1px #888"><a href="#">PIVOT TABLE</a></li>
-        <li style="border-right: solid 1px #888"><a href="#">MAP</a></li>
-        <li style="border-right: solid 1px #888"><a href="#">DATA VISUALIZER</a></li>
-        <li style="border-right: solid 1px #888"><a href="#">NEWS</a></li>
-        <li class="dropdown" style="border-right: solid 1px #888">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ARDS OPERATIONAL<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-              <li><a href="#">ARDS user Manual</a></li>
-            <li><a href="#">LGDM2i User Manual</a></li>
-            <li><a href="#">LGDM2i Upgrading Information</a></li>
-          </ul>
-        </li>
-        <li style="border-right: solid 1px #888"><a href="#">HELP</a></li>
-        
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>&nbsp;Leonard Mpande.<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-              <li><a href="#"><i class="fa fa-pencil"></i>&nbsp;Update Info</a></li>
-            <li><a href="#"><i class="fa fa-lock"></i>&nbsp;Change Password</a></li>
-            <li class="divider"></li>
-            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;Logout</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-      <div class="container">
-          <div class="row" id="body">
-              <div class="col-md-3 hidden-sm hidden-xs ">
-                  <div id="leftMenu">
-                      <div class="panel-group" id="accordion">
-                            <div class="panel panel-success">
-                              <div class="panel-heading">
-                                <h4 class="panel-title">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    Data
-                                  </a>
-                                </h4>
-                              </div>
-                              <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                  <ul class="nav nav-pills nav-stacked">
-                                    <li class="active">                                        
-                                        <div class="panel-group" id="accordion1">
-                                                <div class="panel panel-default">
-                                                  <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                      <a class="text-success" data-toggle="collapse" data-parent="#accordion1" href="#collapseOneItemOne">
-                                                          <i class="fa fa-chevron-circle-down pull-right"></i>Production
-                                                      </a>
-                                                    </h4>
-                                                  </div>
-                                                  <div id="collapseOneItemOne" class="panel-collapse collapse">
-                                                    <div class="panel-body">
-                                                        <ul class="nav nav-pills nav-stacked">
-                                                             <li><a href="#" class="text-success"></i>Crops<i class="fa fa-chevron-right pull-right"></i> </a></li>
-                                                             <li><a href="#" class="text-success">Livestock <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                                         </ul>
-                                                      </div>
-                                                  </div>
-                                                </div>
-                                                <div class="panel panel-default p">
-                                                  <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                      <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwoItemOne">
-                                                          <i class="fa fa-chevron-circle-down pull-right"></i> Infrastructures
-                                                      </a>
-                                                    </h4>
-                                                  </div>
-                                                  <div id="collapseTwoItemOne" class="panel-collapse collapse">
-                                                    <div class="panel-body">
-                                                        <ul class="nav nav-pills nav-stacked">
-                                                        <li><a href="#" class="text-success">Irrigation <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                                        <li><a href="#" class="text-success">marketing <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                                        <li><a href="#" class="text-success">Josho<i class="fa fa-chevron-right pull-right"></i></a></li>
-                                                        </ul> 
-                                                      </div>
-                                                  </div>
-                                                </div>
-                                            <div class="panel panel-default p">
-                                                  <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                      <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwoItemthree">
-                                                          <i class="fa fa-chevron-circle-down pull-right"></i>Trade
-                                                      </a>
-                                                    </h4>
-                                                  </div>
-                                                  <div id="collapseTwoItemthree" class="panel-collapse collapse">
-                                                    <div class="panel-body">
-                                                        <ul class="nav nav-pills nav-stacked">
-                                                            <li><a href="#" class="text-success">Livestock <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                                            <li><a href="#" class="text-success">Crops <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                                        </ul>
-                                                      </div>
-                                                  </div>
-                                                </div>
-                                            <div class="panel panel-default p">
-                                                  <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                      <a data-toggle="collapse" data-parent="#accordion1" href="#">
-                                                          <i class="fa fa-chevron-circle-down pull-right"></i> Services
-                                                      </a>
-                                                    </h4>
-                                                  </div>
+     <div class="row">
+         <div class="col-sm-3">
+             Administrative units <br>
+             <div class="btn-group btn-group-xs unitfilter">
+                 <button type="button" class="btn btn-default" id="allunits">all</button>
+                 <button type="button" class="btn btn-default" id="regions">Regions</button>
+                 <button type="button" class="btn btn-default" id="district">disticts</button>
+             </div>
+             <br>
+             <select name="adminUnit" multiple="multiple" class="adminUnit">
 
-                                                </div>
-                                              </div>
+             </select>
+         </div>
+         <div class="col-sm-3">
+             Periods <br>
+             <div class="btn-group btn-group-xs periodfilter" >
+                 <button type="button" class="btn btn-default" id="years">Yearly</button>
+                 <button type="button" class="btn btn-default" id="quarters">quarterly</button>
+                 <button type="button" class="btn btn-default" id="mounths">monthly</button>
+             </div>
+             <br>
+             <select name="periods" multiple="multiple" class="periods">
 
+             </select>
+         </div>
+         <div class="col-sm-3">
+             Data<br><br>
+             <select name="data" multiple="multiple" class="data-element">
 
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="panel panel-success">
-                              <div class="panel-heading">
-                                <h4 class="panel-title">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                    Documents
-                                  </a>
-                                </h4>
-                              </div>
-                              <div id="collapseTwo" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                  <ul class="nav nav-pills nav-stacked">
-                                    <li ><a href="#" class="text-success"><i class="fa fa-cloud-download"></i> ARDS Framework <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                    <li><a href="#" class="text-success"><i class="fa fa-cloud-download"></i> ARDS Guidelines <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                    <li><a href="#" class="text-success"><i class="fa fa-cloud-download"></i> Policies <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="panel panel-success">
-                              <div class="panel-heading">
-                                <h4 class="panel-title">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                    Links
-                                  </a>
-                                </h4>
-                              </div>
-                              <div id="collapseThree" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                   <ul class="nav nav-pills nav-stacked">
-                                       <li ><a href="#" class="text-success"><i class="fa fa-globe"></i> Agriculture <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                    <li><a href="#" class="text-success"><i class="fa fa-globe"></i> F.A.O <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                    <li><a href="#" class="text-success"><i class="fa fa-globe"></i> NBS <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                    <li><a href="#" class="text-success"><i class="fa fa-globe"></i> Mifugo <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                    <li><a href="#" class="text-success"><i class="fa fa-globe"></i> Viwanda <i class="fa fa-chevron-right pull-right"></i></a></li>
-                                    
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            </div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div id="contents" class="row">
-                      <h4>Brief Introduction </h4>
-                      <p>
-                          High life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                      </p>
-                     
-                       <h4>Mission</h4>
-                      <p>
-                          wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                      </p>
-                       <h4>Vision</h4>
-                      <p>
-                           sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                      </p>
-                      
-                      <div class="col-md-12">
-                          <ul class="nav nav-tabs">
-                            <li class="active"><a href="#home" style="font-size: 0.8em" data-toggle="tab">Machines Distribution</a></li>
-                            <!--<li><a href="#profile" data-toggle="tab" style="font-size: 0.8em">Cooperation Groups</a></li>-->
-                            <li><a href="#messages" data-toggle="tab" style="font-size: 0.8em">Food Condition</a></li>
-                            <li><a href="#settings" data-toggle="tab" style="font-size: 0.8em">Grazing Land</a></li>
-                          </ul>
+             </select>
+         </div>
+         <div class="col-sm-3">
+             Category<br><br>
+             <select name="category" class="category">
+                 <option value="pe">period</option>
+                 <option value="ou">administrative units</option>
+             </select>
+         </div>
+     </div>
 
-                          <!-- Tab panes -->
-                          <div class="tab-content">
-                            <div class="tab-pane active" id="home">
-                                <img src="images1.jpg" style="height: 300px; width: 100%" class="img-responsive img-thumbnail"/>
-                            </div>
-                            <div class="tab-pane" id="profile">
-                                <img src="download1.jpg" style="height: 300px; width: 100%" class="img-responsive img-thumbnail"/>
-                            </div>
-                              <div class="tab-pane" id="messages">
-                                  <img src="images5.jpg" style="height: 300px; width: 100%" class="img-responsive img-thumbnail" />
-                              </div>
-                              <div class="tab-pane" id="settings">
-                                  <img src="images7.jpg" style="height: 300px; width: 100%" class="img-responsive img-thumbnail"/>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3" style="margin-top: 0px">
-                  <div class="row">
-                      <div class="col-md-12">
-                          <!-- Image Slide show-->
-                          
-                          <div id="slider_container_3">
+     <div class="row" style="margin-top: 15px">
+         <div class="btn-group btn-group-xs reports">
+             <button class="btn btn-primary" id="draw_table"><img src='table.png' style='height:30px;width:30px'> Table</button>
+             <button class="btn btn-primary" id="draw_bar"><img src='bar.png' style='height:30px;width:30px'> Bar Chat</button>
+             <button class="btn btn-primary" id="draw_column"><img src='column.png' style='height:30px;width:30px'> Column Chat</button>
+             <button class="btn btn-primary" id="draw_line"><img src='line.png' style='height:30px;width:30px'> Line Chat</button>
+             <button class="btn btn-primary" id="draw_pie"><img src='pie.png' style='height:30px;width:30px'> Pie Chat</button>
+             <button class="btn btn-primary" id="export_cvs"><img src='cvs.jpg' style='height:30px;width:30px'> Export to Excel</button>
+         </div>
 
-				<div id="SliderName_3" class="SliderName_3 col-md-12">
-					<img class="slideProperty img-rounded img-responsive" src="Slider/img/01.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/02.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/03.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/04.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/05.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/06.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/07.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/08.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/09.jpg" alt="" title="" />
-					<img class="slideProperty img-thumbnail img-responsive" src="Slider/img/10.jpg" alt="" title="" />
-				</div>
-				<div class="c"></div>
+     </div>
+        <div class="row" id="mainarea" style="margin-top: 15px">
 
-				<script type="text/javascript">
-
-					demo3Effect1 = {name: 'myEffect31', top: true, move: true, duration: 400};
-					demo3Effect2 = {name: 'myEffect32', right: true, move: true, duration: 400};
-					demo3Effect3 = {name: 'myEffect33', bottom: true, move: true, duration: 400};
-					demo3Effect4 = {name: 'myEffect34', left: true, move: true, duration: 400};
-					demo3Effect5 = {name: 'myEffect35', rows: 3, cols: 9, delay: 50, duration: 100, order: 'random', fade: true};
-					demo3Effect6 = {name: 'myEffect36', rows: 2, cols: 4, delay: 100, duration: 400, order: 'random', fade: true, chess: true};
-
-					effectsDemo3 = [demo3Effect1,demo3Effect2,demo3Effect3,demo3Effect4,demo3Effect5,demo3Effect6,'blinds'];
-
-					var demoSlider_3 = Sliderman.slider({container: 'SliderName_3', width: 250, height: 200, effects: effectsDemo3, display: {autoplay: 3000}});
-				</script>
-
-				<div class="c"></div>
-			</div>
-                          
-                          <!--End Image Slide show-->
-                          
-                      </div>
-                  </div><br>
-                  <div class="row">
-                  <div id="status">
-                      <br>
-                      <div class="row">
-                          <h4 class="text-center">Maize Production</h4>
-                          <div class="col-xs-5 col-md-offset-2"><img src="chart1.jpg"  alt="..." class="img-thumbnail"></div>
-                          <div class="col-xs-5" style="font-size:12px;">Anim pariatur cliche reprehender reprehender reprehender</div>
-                      </div>    
-                      <br><hr>
-                      <div class="row">
-                          <h4 class="text-center">Meat Production</h4>
-                          <div class="col-xs-5 col-md-offset-2"><img src="chart2.jpg" alt="..." class="img-thumbnail"></div>
-                          <div class="col-xs-5" style="font-size:12px;">Anim pariatur cliche reprehender reprehender reprehender</div>
-                      </div>    
-                      <br><hr>
-                      <div class="row">
-                          <h4 class="text-center">Irrigation Area</h4>
-                          <div class="col-xs-5  col-md-offset-2"><img src="chart3.jpg" alt="..." class="img-thumbnail"></div>
-                          <div class="col-xs-5" style="font-size:12px;">Anim pariatur cliche reprehender reprehender reprehender</div>
-                      </div>    
-                      <br>
-
-                  </div>
-              </div>
-              </div>
-          </div>
-          <div  id="footer" class="text-center" style="background-color: darkgreen;border-radius: 5px;padding: 5px">
-                        &copy; 2014 Agricaltural Routine Database System Web Portal
-          </div>
-      </div>
-  </body>
+        </div>
+    </div>
+</div>
+</body>
 </html>
+
